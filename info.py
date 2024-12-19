@@ -5,8 +5,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'akstreambot')
-API_ID = int(environ.get('API_ID', '21250503'))
-API_HASH = environ.get('API_HASH', 'dc32d5392a299f1495ad7864be1f595a')
+API_ID = int(environ.get('API_ID', '29882686'))
+API_HASH = environ.get('API_HASH', 'b642a25aee67b2aed02116df4a916bca')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -23,7 +23,7 @@ else:
 URL = environ.get("URL", "")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002233006888'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002383459603)
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7459282233').split()]
 
 # MongoDB information
@@ -32,5 +32,5 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 
 # Shortlink Info
 SHORTLINK = bool(environ.get('SHORTLINK', False)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Luckyurl.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '0477d4e75e53295b057c7ed5bf5fd11744b0ee88')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortxlinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '26c58ac6c7879cf25966a3f6fc999c9c1e3c9315')
